@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 72322a50dc6955840917d87ef83efa44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6151681581431284622
+    second: TX Tileable Brick_0
+  - first:
+      213: -4267898200940034463
+    second: TX Tileable Brick_1
+  - first:
+      213: 3971623857727820498
+    second: TX Tileable Brick_2
+  - first:
+      213: -7928716680602376487
+    second: TX Tileable Brick_3
+  - first:
+      213: -2552573568523267599
+    second: TX Tileable Brick_4
+  - first:
+      213: -6475229554855320817
+    second: TX Tileable Brick_5
+  - first:
+      213: 1636428413515444642
+    second: TX Tileable Brick_6
+  - first:
+      213: -844390670352449916
+    second: TX Tileable Brick_7
+  - first:
+      213: -1347922487310515230
+    second: TX Tileable Brick_8
+  - first:
+      213: 3306371749514108509
+    second: TX Tileable Brick_9
+  - first:
+      213: 838133747331757250
+    second: TX Tileable Brick_10
+  - first:
+      213: -857524461227350191
+    second: TX Tileable Brick_11
+  - first:
+      213: -6743312169833592803
+    second: TX Tileable Brick_12
+  - first:
+      213: 7295521142355122455
+    second: TX Tileable Brick_13
+  - first:
+      213: -187173901992667822
+    second: TX Tileable Brick_14
+  - first:
+      213: -2077711490004338431
+    second: TX Tileable Brick_15
+  - first:
+      213: 23863845057534349
+    second: TX Tileable Brick_16
+  - first:
+      213: -2171060543172036377
+    second: TX Tileable Brick_17
+  - first:
+      213: 1819032332039844817
+    second: TX Tileable Brick_18
+  - first:
+      213: 8284562814613509113
+    second: TX Tileable Brick_19
+  - first:
+      213: 7576205191688173828
+    second: TX Tileable Brick_20
+  - first:
+      213: -1359356333100414091
+    second: TX Tileable Brick_21
+  - first:
+      213: -1645070267671442048
+    second: TX Tileable Brick_22
+  - first:
+      213: -8769263416512715065
+    second: TX Tileable Brick_23
+  - first:
+      213: 4341630098099632397
+    second: TX Tileable Brick_24
+  - first:
+      213: 8538824329023445566
+    second: TX Tileable Brick_25
+  - first:
+      213: -3292563756637219977
+    second: TX Tileable Brick_26
+  - first:
+      213: 935078483772052365
+    second: TX Tileable Brick_27
+  - first:
+      213: -7967845253630895386
+    second: TX Tileable Brick_28
+  - first:
+      213: -1727288766207653888
+    second: TX Tileable Brick_29
+  - first:
+      213: -3006752124281518008
+    second: TX Tileable Brick_30
+  - first:
+      213: 8834500867912988790
+    second: TX Tileable Brick_31
+  - first:
+      213: 214458023846720149
+    second: TX Tileable Brick_32
+  - first:
+      213: 2649846530942389811
+    second: TX Tileable Brick_33
+  - first:
+      213: -8721248907211194271
+    second: TX Tileable Brick_34
+  - first:
+      213: -2140650512254400495
+    second: TX Tileable Brick_35
+  - first:
+      213: 6886919141741062180
+    second: TX Tileable Brick_36
+  - first:
+      213: 7714518424899267830
+    second: TX Tileable Brick_37
+  - first:
+      213: 2720350564901044639
+    second: TX Tileable Brick_38
+  - first:
+      213: -4047474787260206933
+    second: TX Tileable Brick_39
+  - first:
+      213: 3746120778445065284
+    second: TX Tileable Brick_40
+  - first:
+      213: 8534746976054380353
+    second: TX Tileable Brick_41
+  - first:
+      213: -6588810690711506041
+    second: TX Tileable Brick_42
+  - first:
+      213: -2702193699853009883
+    second: TX Tileable Brick_43
+  - first:
+      213: 7174434798548455068
+    second: TX Tileable Brick_44
+  - first:
+      213: -2779586561838703282
+    second: TX Tileable Brick_45
+  - first:
+      213: -5653064803720053549
+    second: TX Tileable Brick_46
+  - first:
+      213: -909591956728323364
+    second: TX Tileable Brick_47
+  - first:
+      213: 8721403836131369663
+    second: TX Tileable Brick_48
+  - first:
+      213: -7288154248493876814
+    second: TX Tileable Brick_49
+  - first:
+      213: 8844948531319417433
+    second: TX Tileable Brick_50
+  - first:
+      213: -2455875128482898491
+    second: TX Tileable Brick_51
+  - first:
+      213: -5590348090080216397
+    second: TX Tileable Brick_52
+  - first:
+      213: 3934793682985678904
+    second: TX Tileable Brick_53
+  - first:
+      213: -96702786195650851
+    second: TX Tileable Brick_54
+  - first:
+      213: -7201415610013898819
+    second: TX Tileable Brick_55
+  - first:
+      213: 190248078455403115
+    second: TX Tileable Brick_56
+  - first:
+      213: 8341014743401088905
+    second: TX Tileable Brick_57
+  - first:
+      213: -6374810509409602343
+    second: TX Tileable Brick_58
+  - first:
+      213: -1207893931082110864
+    second: TX Tileable Brick_59
+  - first:
+      213: 7330146775846300202
+    second: TX Tileable Brick_60
+  - first:
+      213: 8805823114750102656
+    second: TX Tileable Brick_61
+  - first:
+      213: 1337440823077522928
+    second: TX Tileable Brick_62
+  - first:
+      213: -6305254134765371758
+    second: TX Tileable Brick_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 3
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX Tileable Brick_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8366882ec92f5550800000000000000
+      internalID: 6151681581431284622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166c073d23165c4c0800000000000000
+      internalID: -4267898200940034463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d255552bda0e1730800000000000000
+      internalID: 3971623857727820498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d62bf7ef2a87f190800000000000000
+      internalID: -7928716680602376487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f19e111ddf639cd0800000000000000
+      internalID: -2552573568523267599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03ecbfe60d5326a0800000000000000
+      internalID: -6475229554855320817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1b1ffc8f2c5b610800000000000000
+      internalID: 1636428413515444642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48efcf9b82f1844f0800000000000000
+      internalID: -844390670352449916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3881fa3a73b4de0800000000000000
+      internalID: -1347922487310515230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5edc29969792ed20800000000000000
+      internalID: 3306371749514108509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4f9fbd336a1ab00800000000000000
+      internalID: 838133747331757250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157e55ebb067914f0800000000000000
+      internalID: -857524461227350191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1800832f41fa62a0800000000000000
+      internalID: -6743312169833592803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719dd6d53d5ee3560800000000000000
+      internalID: 7295521142355122455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255d08ce356076df0800000000000000
+      internalID: -187173901992667822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileable Brick_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1093b84786c7a23e0800000000000000
+      internalID: -2077711490004338431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9c96ab56a79cc7247baf6e0a9b817f40
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
