@@ -20,12 +20,24 @@ public class ScnMng_Lv2 : MonoBehaviour
     public GameObject contVida_pn;
     public CamaraScript cs;
     public Boss_Script_Lv2 bs_lv2;
+    public Image fnd_transic;
+    public Text btn_guardar;
+    public GameObject tp_dmgItem;
+    public AudioSource AS_cs;
 
     public Text vid_Text;
 
     // Start is called before the first frame update
     void Start()
     {
+        AS_cs.volume = 0;
+
+        tp_dmgItem.SetActive(false);
+        if (PlayerPrefs.GetString("Hard") == "true")
+        {
+            tp_dmgItem.SetActive(true);
+        }
+
         barra.SetActive(false);
         contVida_pn.SetActive(false);
     }
@@ -65,6 +77,22 @@ public class ScnMng_Lv2 : MonoBehaviour
                 auxVidaBoss = false;
             }
         }
+
+        if (finNivel == false && AS_cs.volume < 0.25)
+        {
+            AS_cs.volume = AS_cs.volume + setoutfnd;
+        }
+
+        if (finNivel == true)
+        {
+            fnd_transic.color = new Color(fnd_transic.color.r, fnd_transic.color.g, fnd_transic.color.b, fnd_transic.color.a + setoutfnd);
+            AS_cs.volume = AS_cs.volume - setoutfnd;
+        }
+
+        if (fnd_transic.color.a > 1)
+        {
+            SceneManager.LoadScene("TransLv2Lv3");
+        }
     }
 
     public void Continuar()
@@ -80,16 +108,23 @@ public class ScnMng_Lv2 : MonoBehaviour
 
     public void Guardar()
     {
-
+        PlayerPrefs.SetString("Nivel", "2");
+        btn_guardar.text = "Guardado";
+        StartCoroutine(cambioText_Guardar());
     }
 
     public void Salir()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Start_Menu");
     }
 
     public void FinNivel()
     {
         finNivel = true;
+    }
+    IEnumerator cambioText_Guardar()
+    {
+        yield return new WaitForSeconds(2);
+        btn_guardar.text = "Guardar";
     }
 }

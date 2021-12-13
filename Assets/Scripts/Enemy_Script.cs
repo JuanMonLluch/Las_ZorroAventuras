@@ -18,9 +18,7 @@ public class Enemy_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector2 v1 = new Vector2(0, transform.position.y);
-        Vector2 v2 = new Vector2(0, pj.transform.position.y);
-        Debug.Log(Vector2.Distance(v1, v2));
+        
     }
     
     // Update is called once per frame
@@ -69,7 +67,7 @@ public class Enemy_Script : MonoBehaviour
                 Debug.Log("X es: " + Vector2.Distance(v1x, v2x));
 
                 Vector3 target = pj.transform.position;
-                transform.position = Vector3.MoveTowards(transform.position, target, 4 * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, target, speedEnemy * Time.deltaTime);
                 if(transform.position.x - pj.transform.position.x < 0)
                 {
                     sp2d.flipX = false;

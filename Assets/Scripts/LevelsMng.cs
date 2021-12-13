@@ -20,6 +20,9 @@ public class LevelsMng : MonoBehaviour
     public Image barradeVida;
     public GameObject barra;
     public Image fnd_transic;
+    public Text btn_guardar;
+    public GameObject tp_dmgItem;
+    public AudioSource AS_cs;
 
     public Jugador pj;
     public BossScript bossScript;
@@ -28,6 +31,15 @@ public class LevelsMng : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AS_cs.volume = 0;
+        
+
+        tp_dmgItem.SetActive(false);
+        if (PlayerPrefs.GetString("Hard") == "true")
+        {
+            tp_dmgItem.SetActive(true);
+        }
+
         contVida_pn.SetActive(false);
         barra.SetActive(false);
     }
@@ -35,6 +47,7 @@ public class LevelsMng : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         obj_Text.text = "X " + pj.objRecog.ToString(); 
         
         if (cs.movCam == false)
@@ -67,10 +80,14 @@ public class LevelsMng : MonoBehaviour
                 auxVidaBoss = false;
             }
         }
-
+        if (finNivel == false && AS_cs.volume < 0.25)
+        {
+            AS_cs.volume = AS_cs.volume + setoutfnd;
+        }
         if (finNivel == true)
         {
             fnd_transic.color = new Color(fnd_transic.color.r, fnd_transic.color.g, fnd_transic.color.b, fnd_transic.color.a + setoutfnd);
+            AS_cs.volume = AS_cs.volume - setoutfnd;
         }
 
         if (fnd_transic.color.a > 1)
@@ -93,16 +110,24 @@ public class LevelsMng : MonoBehaviour
 
     public void Guardar()
     {
-
+        PlayerPrefs.SetString("Nivel", "1");
+        btn_guardar.text = "Guardado";
+        StartCoroutine(cambioText_Guardar());
     }
 
     public void Salir()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Start_Menu");
     }
 
     public void FinNivel()
     {
         finNivel = true;
+    }
+
+    IEnumerator cambioText_Guardar()
+    {
+        yield return new WaitForSeconds(2);
+        btn_guardar.text = "Guardar";
     }
 }

@@ -38,6 +38,7 @@ public class CamaraScript : MonoBehaviour
             {
                 canvas.SetActive(true);
                 auxCam = false;
+                
             }
         }
 

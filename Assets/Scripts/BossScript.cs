@@ -42,7 +42,7 @@ public class BossScript : MonoBehaviour
         cadDisparo = Random.Range(0, 100);
         if(cadDisparo < 0.7f && disp == true && limDisp == true)
         {
-            Instantiate(balaBoss, transform.position, transform.rotation);
+            Instantiate(balaBoss, transform.position - new Vector3(2,0), transform.rotation);
             
         }
 

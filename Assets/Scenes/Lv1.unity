@@ -1286,6 +1286,24 @@ Transform:
   m_Father: {fileID: 199765119}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &128221812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5224836219462989673, guid: 899953ab7a6390d458400129a6b75bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8782401323613481669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &128221815 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5224836219462989668, guid: 899953ab7a6390d458400129a6b75bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8782401323613481669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128221812}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff76aff07f7ab49a7a6a9380fd9375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &128838364
 GameObject:
   m_ObjectHideFlags: 0
@@ -24087,24 +24105,6 @@ Transform:
   m_Father: {fileID: 199765119}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &422121157 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8782401324031403008, guid: 899953ab7a6390d458400129a6b75bdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8782401323613481669}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &422121158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8782401324031403021, guid: 899953ab7a6390d458400129a6b75bdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8782401323613481669}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422121157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baff76aff07f7ab49a7a6a9380fd9375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &433811848
 GameObject:
   m_ObjectHideFlags: 0
@@ -25787,8 +25787,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Guardar
 --- !u!222 &517187477
@@ -26910,7 +26910,10 @@ MonoBehaviour:
   barradeVida: {fileID: 2065750324}
   barra: {fileID: 1670295108}
   fnd_transic: {fileID: 1796960552}
-  pj: {fileID: 422121158}
+  btn_guardar: {fileID: 517187476}
+  tp_dmgItem: {fileID: 1739240886}
+  AS_cs: {fileID: 2034970629}
+  pj: {fileID: 128221815}
   bossScript: {fileID: 212871099}
   cs: {fileID: 2034970626}
 --- !u!4 &659110325
@@ -30720,7 +30723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alcanceVision: 17
   bola: {fileID: 1746797733073528, guid: 7949930a4be82f14497a46200e300772, type: 3}
-  pj: {fileID: 422121157}
+  pj: {fileID: 128221812}
 --- !u!95 &946140415
 Animator:
   serializedVersion: 3
@@ -37124,7 +37127,7 @@ GameObject:
   - component: {fileID: 1055753344}
   - component: {fileID: 1055753347}
   m_Layer: 0
-  m_Name: Plat_movedizas
+  m_Name: TP Plat_Mov_Ver
   m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42224,7 +42227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alcanceVision: 25
   bola: {fileID: 1746797733073528, guid: 7949930a4be82f14497a46200e300772, type: 3}
-  pj: {fileID: 422121157}
+  pj: {fileID: 128221812}
 --- !u!1 &1445538398
 GameObject:
   m_ObjectHideFlags: 0
@@ -48504,8 +48507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34aade1dfac1b148942bec9649e125d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  camScr: {fileID: 0}
+  camera: {fileID: 2034970624}
+  camScr: {fileID: 2034970626}
   bs: {fileID: 0}
 --- !u!61 &1678865841
 BoxCollider2D:
@@ -48756,7 +48759,7 @@ GameObject:
   - component: {fileID: 1689685094}
   m_Layer: 0
   m_Name: TX Village Props_129
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49626,7 +49629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d345473ab3d6214880725f94662b39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pj: {fileID: 422121157}
+  pj: {fileID: 0}
 --- !u!1 &1743028618
 GameObject:
   m_ObjectHideFlags: 0
@@ -50060,7 +50063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   auxFlip: 1
   speedEnemy: 4
-  pj: {fileID: 422121157}
+  pj: {fileID: 128221812}
   sp2d: {fileID: 1815746289}
   enemyAnimator: {fileID: 1815746291}
 --- !u!50 &1815746287
@@ -52062,7 +52065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034970624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43, y: 0.36466074, z: -10}
+  m_LocalPosition: {x: -43.2, y: 0.36466074, z: -10}
   m_LocalScale: {x: 0.0017794024, y: 0.0016557954, z: 1}
   m_Children:
   - {fileID: 1653033387}
@@ -52071,7 +52074,7 @@ Transform:
   - {fileID: 2026020649}
   - {fileID: 455177779}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2034970626
 MonoBehaviour:
@@ -52089,7 +52092,7 @@ MonoBehaviour:
   movCam: 1
   velCam: 4
   canvas: {fileID: 660931316}
-  pj: {fileID: 422121157}
+  pj: {fileID: 128221812}
   boss: {fileID: 212871098}
 --- !u!81 &2034970627
 AudioListener:
@@ -52152,9 +52155,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4c1864f8bc236334ebfa5e06838dcbf2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f4be15744583d3145bb7d62b38c303ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -58354,7 +58357,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2147330966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 659110324}
+        m_MethodName: Guardar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2147330966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58468,7 +58482,7 @@ PrefabInstance:
         type: 3}
       propertyPath: jugador
       value: 
-      objectReference: {fileID: 422121158}
+      objectReference: {fileID: 128221815}
     - target: {fileID: 2752715325584079494, guid: 9ef7cbf734f854443a9e78dc741f0ec6,
         type: 3}
       propertyPath: balaBoss
@@ -58489,6 +58503,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5224836219269112073, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2034970628}
+    - target: {fileID: 5224836219462989668, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: mng
+      value: 
+      objectReference: {fileID: 659110324}
+    - target: {fileID: 5224836219462989668, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 212871098}
+    - target: {fileID: 5224836219462989668, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 464996237}
+    - target: {fileID: 5224836219462989671, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224836219462989671, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224836219462989671, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8782401324031403008, guid: 899953ab7a6390d458400129a6b75bdd,
         type: 3}
       propertyPath: m_Name
@@ -58588,6 +58637,21 @@ PrefabInstance:
         type: 3}
       propertyPath: pj
       value: 
-      objectReference: {fileID: 422121158}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782401324707594418, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: energia
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782401324707594418, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: pj_gameobject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782401324707594418, guid: 899953ab7a6390d458400129a6b75bdd,
+        type: 3}
+      propertyPath: circ_int_energia
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899953ab7a6390d458400129a6b75bdd, type: 3}

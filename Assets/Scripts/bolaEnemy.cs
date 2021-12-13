@@ -22,8 +22,11 @@ public class bolaEnemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        gameObject.SetActive(false);
-        Destroy(gameObject, 0.5f);
+        if ( collision.gameObject.tag != "Projectile")
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject, 0.2f);
+        }
+        
     }
 }

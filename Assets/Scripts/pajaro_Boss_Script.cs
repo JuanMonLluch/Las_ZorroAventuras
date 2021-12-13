@@ -20,6 +20,10 @@ public class pajaro_Boss_Script : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.tag != "Terreno")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }

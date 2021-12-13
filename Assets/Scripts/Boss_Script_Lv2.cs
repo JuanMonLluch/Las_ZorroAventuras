@@ -17,6 +17,8 @@ public class Boss_Script_Lv2 : MonoBehaviour
 
     private GameObject[] arr_balas_act;
 
+    private GameObject[] arr_balas;
+
     public GameObject gen_paj_boss;
 
     public GameObject paj_boss;
@@ -54,7 +56,7 @@ public class Boss_Script_Lv2 : MonoBehaviour
             cadDisparo = Random.Range(0, 100);
             if (cadDisparo < 1 && disp == true && limDisp == true)
             {
-                Instantiate(balaBoss, transform.position - new Vector3(4, -2), transform.rotation);
+                Instantiate(balaBoss, transform.position - new Vector3(2,0), transform.rotation);
             }
         }
         else if (vida <= 35 && vida >= 30)
@@ -76,7 +78,7 @@ public class Boss_Script_Lv2 : MonoBehaviour
             cadDisparo = Random.Range(0, 100);
             if (cadDisparo < 1 && disp == true && limDisp == true)
             {
-                Instantiate(balaBoss, transform.position - new Vector3(4, -2), transform.rotation);
+                Instantiate(balaBoss, transform.position - new Vector3(2,0), transform.rotation);
             }
         }
         else if (vida < 20 && vida >= 15)
@@ -101,7 +103,7 @@ public class Boss_Script_Lv2 : MonoBehaviour
             cadDisparo = Random.Range(0, 100);
             if (cadDisparo < 1 && disp == true && limDisp == true)
             {
-                Instantiate(balaBoss, transform.position - new Vector3(4, -2), transform.rotation);
+                Instantiate(balaBoss, transform.position - new Vector3(2, 0), transform.rotation);
             }
         }
         else if (vida <= 0)
@@ -118,14 +120,15 @@ public class Boss_Script_Lv2 : MonoBehaviour
     {
         float random_instan;
         random_instan = Random.Range(0, 100);
+        
         if ( random_instan < 0.3f)
         {
             int random_position = Random.Range(0, 100);
-            if (random_position < 50)
+            if (random_position < 50 && disp == true)
             {
                 Instantiate(paj_boss, gen_paj_boss.transform.position, gen_paj_boss.transform.rotation);
             }
-            else
+            else if (random_position > 50 && disp == true)
             {
                 Instantiate(paj_boss, gen_paj_boss.transform.position - new Vector3(0, -1.8f), gen_paj_boss.transform.rotation);
             }

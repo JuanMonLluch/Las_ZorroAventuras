@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8632248070454993845}
   - component: {fileID: 8632248070454993844}
   - component: {fileID: 8632248070454993847}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Pajaro_Boss
   m_TagString: Projectile
   m_Icon: {fileID: 0}

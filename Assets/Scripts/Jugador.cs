@@ -5,18 +5,20 @@ using System.Timers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Jugador : MonoBehaviour
 {
 
     //VARIABLES PARA DIFERENTES FUNCIONES
-    private int fuerzaMovimiento = 35;
+    private int fuerzaMovimiento = 30;
     private int fuerzaSalto = 465;
     private bool salto = false;
     private int auxSalto = 0;
     public int objRecog = 0;
     public int vidas = 3;
-    public bool compFinalLevel;
+    public int compFinalLevel; // 0 False, 1 True, 2 Nada
     public bool compTransicción;
+    private bool compPlatMov;
 
     //DECLARAMOS LOS COMPONENTES
     public Rigidbody2D rd2D;
@@ -31,6 +33,8 @@ public class Jugador : MonoBehaviour
     public GameObject boss;
     public LevelsMng mng;
     public ScnMng_Lv2 mng_lv2;
+    public ScnMng_Lv3 mng_lv3;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -44,7 +48,7 @@ public class Jugador : MonoBehaviour
     void Update()
     {
         
-        if (compFinalLevel == false)
+        if (compFinalLevel == 0)
         {
             if (rd2D.velocity.x == 0)
             {
@@ -141,10 +145,15 @@ public class Jugador : MonoBehaviour
                     rd2D.AddForce(new Vector2(0, (fuerzaSalto * 0.55f)));
                     auxSalto++;
                 }
+
+                if (gameObject.transform.parent != null)
+                {
+                    gameObject.transform.parent = null;
+                }
             }
         }
 
-        else if (compFinalLevel == true)
+        else if (compFinalLevel == 1)
         {
             if (sp.flipX == true)
             {
@@ -164,13 +173,19 @@ public class Jugador : MonoBehaviour
 
         }
 
+        if(rd2D.velocity != new Vector2(0,0) && compPlatMov == false)
+        {
+            rd2D.isKinematic = false;
+            gameObject.transform.parent = null;
+        }
+
     }
 
     public void compruebaBoss()
     {
         if (boss.activeSelf == false)
         {
-            compFinalLevel = true;
+            compFinalLevel = 1;
         }
     }
 
@@ -214,7 +229,7 @@ public class Jugador : MonoBehaviour
         {
             if (collision.gameObject.name == "DmgItem" || collision.gameObject.name == "fireball-red-tail-med")
             {
-                pj.enabled = false;
+                compFinalLevel = 2;
                 animator.SetBool("Muerto", true);
                 StartCoroutine(LevelReset());
             }
@@ -227,7 +242,8 @@ public class Jugador : MonoBehaviour
 
         if (collision.gameObject.tag == "bala_Enemigo")
         {
-            pj.gameObject.GetComponent<Jugador>().enabled = false;
+            compFinalLevel = 2;
+            gameObject.GetComponent<Jugador>().enabled = false;
             StartCoroutine(MuertoCoroutine());
             StartCoroutine(LevelReset());
         }
@@ -238,6 +254,7 @@ public class Jugador : MonoBehaviour
 
             if (vidas == 0)
             {
+                compFinalLevel = 2;
                 animator.SetBool("Muerto", true);
                 StartCoroutine(LevelReset());
             }
@@ -257,14 +274,34 @@ public class Jugador : MonoBehaviour
             if (nom_scene == "Lv1")
             {
                 compTransicción = true;
+                PlayerPrefs.SetString("Nivel", "2");
                 mng.FinNivel();
             }
             else if (nom_scene == "Lv2")
             {
                 compTransicción = true;
+                PlayerPrefs.SetString("Nivel", "3");
                 mng_lv2.FinNivel();
             }
+            else if (nom_scene == "Lv3")
+            {
+                compTransicción = true;
+                PlayerPrefs.SetString("Nivel", "3");
+                PlayerPrefs.SetString("Hard", "true");
+                mng_lv3.FinNivel();
+            }
             
+        }
+
+        if(collision.gameObject.name == "TP Plat_Mov_Hor" || collision.gameObject.name == "TP Plat_Mov_Ver" || collision.gameObject.name == "TP Plat_Mov_Diag_Sup" || collision.gameObject.name == "TP Plat_Mov_Diag_Inf")
+        {
+            //rd2D.isKinematic = true;
+            gameObject.transform.parent = collision.transform;
+            compPlatMov = true;
+        }
+        else
+        {
+            compPlatMov = false;
         }
 
     }
